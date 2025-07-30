@@ -4,12 +4,75 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Odin Sign-up Form</title>
 	<link rel="stylesheet" href="style.css" />
-	<script src="script.js" defer></script>
+</head>
 
 <body>
-	<h1>Odin Sign-Up Form</h1>
+	<div class="splash">
+		<div class="odin-banner">
+			<img src="/images/odin-lined.png" class="odin-logo">
+			<h1>ODIN</h1>
+		</div>
+		<div class="credit">
+			<a href="https://unsplash.com/ja/%E5%86%99%E7%9C%9F/%E9%9D%92%E7%A9%BA%E3%81%AB%E6%98%A0%E3%81%88%E3%82%8B%E6%A1%9C%E3%81%8C%E9%AE%AE%E3%82%84%E3%81%8B%E3%81%AB%E5%92%B2%E3%81%8D%E8%AA%87%E3%82%8A%E3%81%BE%E3%81%99-N_yJGWotRaE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+				target="_blank">
+				Unsplash</a>
+			の
+			<a href="https://unsplash.com/ja/@linusbelanger?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+				target="_blank">
+				Linus Belanger</a>
+			が撮影した写真
+		</div>
+	</div>
+	<div class="login">
+		<div class="above-form">
+			<p><b>This is not a real online service! You know you need something like this in your life to help you
+					realize
+					your deepst dreams. Sign up <i>now</i>
+					to get started.<br><br>You <i>know</i> you want to.</b>
+			</p>
+		</div>
+		<div class="form-inputs">
+			<h2>Let&apos;s do this!</h2>
+			<form class="inputs" id="login-form">
+				<div>
+					<div>
+						<label for="first-name">FIRST NAME</label><br>
+						<input type="text" id="first-name" name="first-name" pattern="^[^\d\p{P}]+$" required>
+					</div>
+					<div>
+						<label for="last-name">LAST NAME</label><br>
+						<input type="text" id="last-name" name="last-name" pattern="^[^\d\p{P}]+$" required>
+					</div>
+				</div>
+				<div>
+					<div>
+						<label for="email">EMAIL</label><br>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<div>
+						<label for="phone">PHONE NUMBER</label><br>
+						<input type="tel" id="phone" name="phone" pattern="[0-9]*">
+					</div>
+				</div>
+				<div>
+					<div>
+						<label for="password">PASSWORD</label><br>
+						<input type="password" id="password" name="password" required>
+					</div>
+					<div>
+						<label for="password-confirmation">CONFIRM PASSWORD</label><br>
+						<input type="password" id="password-confirmation" name="password-confirmation" required>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="below-form">
+			<button type="submit" form="login-form">Create Account</button>
+			<p>Already have an account? <a href="/"><b>Log in</b></a></p>
+		</div>
+	</div>
 </body>
 
 </html>
